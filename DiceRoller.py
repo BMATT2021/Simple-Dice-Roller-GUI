@@ -27,16 +27,16 @@ def roll4():
 root = Tk()
 root.title("Dice Roller")
 
-label1 = Label(root, text="0", font=("Comic Sans", 112))
+label1 = Label(root, text="0", font=("Comic Sans", 112), bg= "gray51")
 label1.grid(row=0, column=1, sticky=N+S+E+W)
 
-label2 = Label(root, text="0", font=("Comic Sans", 112))
+label2 = Label(root, text="0", font=("Comic Sans", 112), bg= "gray51")
 label2.grid(row=2, column=1, sticky=N+S+E+W)
 
-label3 = Label(root, text="0", font=("Comic Sans", 112))
+label3 = Label(root, text="0", font=("Comic Sans", 112),bg= "gray51")
 label3.grid(row=0, column=3, sticky=N+S+E+W)
 
-label4 = Label(root, text="0",font=("Comic Sans",112))
+label4 = Label(root, text="0",font=("Comic Sans",112), bg= "gray51")
 label4.grid(row=2, column=3, sticky=N+S+E+W)
 
 button4 = Button(root, text="Roll D4", command=roll4)
@@ -58,6 +58,6 @@ root.columnconfigure(0, weight=1)
 root.columnconfigure(1, weight=1)
 root.rowconfigure(0, weight=1)
 root.rowconfigure(1, weight=1)
-
+root.configure(bg='grey')
 
 root.mainloop()
