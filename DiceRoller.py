@@ -18,6 +18,10 @@ def roll2():
 def roll3():
     dice3 = random.randint(1,12)
     label3["text"] = str(dice3)
+def roll4():
+    dice4 = random.randint(1,4)
+    label4["text"] = str(dice4)
+
 
     
 root = Tk()
@@ -31,6 +35,12 @@ label2.grid(row=2, column=1, sticky=N+S+E+W)
 
 label3 = Label(root, text="0", font=("Comic Sans", 112))
 label3.grid(row=0, column=3, sticky=N+S+E+W)
+
+label4 = Label(root, text="0",font=("Comic Sans",112))
+label4.grid(row=2, column=3, sticky=N+S+E+W)
+
+button4 = Button(root, text="Roll D4", command=roll4)
+button4.grid(row=3, column=3,columnspan=2,sticky=N+S+E+W)
 
 button3 = Button(root, text="Roll D12", command=roll3)
 button3.grid(row=1, column=3, columnspan=2, sticky=N+S+E+W)
